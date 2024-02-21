@@ -164,7 +164,7 @@ The "Settings" section offers many different options:
 ## Video and PowerPoint
 
 
-- Video [video]()<!--URL -->
+- Video [video](https://youtu.be/3l_956rOnLY)
 - PowerPoint [slides](https://github.com/EmanueleCarrara/Embedded-Software-Project/blob/main/Project%20presentation.pptx)
 
 
