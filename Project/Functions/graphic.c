@@ -10,21 +10,21 @@
 //******************************************************************************
 //
 //! Variable used in the initialization of the arrays for the menù,
-//! rappresents the number of different pages that the system can show
+//! represent the number of different pages that the system can show
 //
 //******************************************************************************
 #define ROW 11
 
 //******************************************************************************
 //
-//! Variable that rappresent the current page in the menù
+//! Variable that represent the current page in the menù
 //
 //******************************************************************************
 uint16_t sez=0;
 
 //******************************************************************************
 //
-//! Variable that rappresent highlighted element in the menù
+//! Variable that represent highlighted element in the menù
 //
 //******************************************************************************
 uint16_t sel=1;
@@ -34,7 +34,7 @@ Graphics_Context g_sContext;
 //******************************************************************************
 //
 //! Variable used for various purposes:
-//! -higlight text
+//! -highlight text
 //! -draw an animation
 //
 //******************************************************************************
@@ -52,7 +52,7 @@ uint16_t animation=2;
 
 //******************************************************************************
 //
-//! Variable that rappresents the speed at which the animation moves
+//! Variable that represent the speed at which the animation moves
 //
 //******************************************************************************
 int16_t animationSpeed=1;
@@ -80,7 +80,7 @@ int32_t txtColor=GRAPHICS_COLOR_WHITE;
 
 //******************************************************************************
 //
-//! This struct is used to store the data for the menu interface.
+//! This structure is used to store the data for the menu interface.
 //! Every row starts with the page title
 //
 //******************************************************************************
@@ -268,7 +268,7 @@ void draw(){
         Graphics_drawStringCentered(&g_sContext,(int8_t *)menu[sez][i],AUTO_STRING_LENGTH,64,25+25*cont,false);
     }
 
-    //section fro drawing the arrows if needed
+    //section for drawing the arrows if needed
     if(cont!=4){
         r.yMin+=25;
         r.yMax=127;

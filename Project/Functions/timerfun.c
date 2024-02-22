@@ -93,7 +93,7 @@ void metHand(){
 //
 //! This function is used to initialize the two timers:
 //! -the timers are set in upmode and is based on the speed of the SMLCK clock
-//! -the devider is 64 for both, because the starting frequency of the clock is high
+//! -the divider is 64 for both, because the starting frequency of the clock is high
 //!  due to the setting in the main
 //! -for the first, the number to count to is set as 46875/3, meaning that it will
 //!  tick three times each second

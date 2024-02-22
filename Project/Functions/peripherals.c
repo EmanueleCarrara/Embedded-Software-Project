@@ -68,7 +68,7 @@ void handleGPIO(){
 
 //******************************************************************************
 //
-//! Funtion that initializes the necessary GPIO pins:
+//! Function that initializes the necessary GPIO pins:
 //! -the input pin 5.1 and 3.5 are set as such with pull-up resistors
 //!   and with the function handleGPIO() as the interrupt handler
 //! -the RGB Multicolor led pins are set and turned off
@@ -122,7 +122,6 @@ void setADC(){
         //x = A15
         ADC14_configureConversionMemory(ADC_MEM0, ADC_VREFPOS_AVCC_VREFNEG_VSS, ADC_INPUT_A15, ADC_NONDIFFERENTIAL_INPUTS);
 
-        //ADC14_configureSingleSampleMode(ADC_MEM2, true);
         ADC14_configureConversionMemory(ADC_MEM2, ADC_VREFPOS_AVCC_VREFNEG_VSS,ADC_INPUT_A10, false);
 
         ADC14_setResultFormat(ADC_SIGNED_BINARY);
@@ -131,7 +130,6 @@ void setADC(){
         Interrupt_enableInterrupt(INT_ADC14);
         Interrupt_enableMaster();
         ADC14_enableSampleTimer(ADC_AUTOMATIC_ITERATION);
-        //setMemADC();
         ADC14_enableConversion();
         ADC14_toggleConversionTrigger();
 }
@@ -196,7 +194,6 @@ void handMic(int16_t val){
 
 void handADC(long int x,long int y){
     if(scorrendo[0]){
-        //res[0]=0;
         if(x>32500 && x<52000 ){
             sectionBack();
             scorrendo[0]=false;
